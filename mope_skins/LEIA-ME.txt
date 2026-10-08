@@ -1,0 +1,37 @@
+MOPE.IO — SKINS, ANIMAIS PADRÃO E EFEITOS DE FOGO
+
+Consulta: 08/10/2026
+
+CONTEÚDO
+- 478 miniaturas de skins de animais, organizadas nas pastas 01 a 10.
+- 103 miniaturas dos animais padrão/skins normais em 11_Skins_Normais (103 espécies no registro do cliente atual).
+- 250 sprites do efeito Fireball em 12_Fogos_Dos_Animais (25 variantes × dynamic/static × frames 0–4).
+- index.html abre uma galeria offline. Consulte manifest.csv, 11_Skins_Normais/manifest_skins_normais.csv e 12_Fogos_Dos_Animais/manifest_fogos.csv.
+
+IMPORTANTE
+As skins das pastas 01 a 10 e os animais padrão são miniaturas estáticas de interface (*.ui.webp), não sprites completos. A pasta 12_Fogos_Dos_Animais contém os frames reais do efeito Fireball.
+
+FOGOS
+A pasta de fogos reúne o efeito de projétil que sai das habilidades dos dragões, Fênix, BD e KD. As variantes estão organizadas em padrão, Dragão, Fênix, BD (Black Dragon) e KD (King Dragon); cada uma inclui dynamic/0–4 e static/0–4. O cliente atual enumera 25 variantes.
+
+SKINS NORMAIS
+11_Skins_Normais contém a imagem padrão de cada espécie registrada no cliente, separada por bioma.
+
+FONTES
+- Cliente: https://mope.io/ (bundle consultado: https://mope.io/BoTM2IF7.js; o nome pode mudar em atualizações).
+- Traduções de skins: https://s3.mope.io/mope-prod/translations/items/en.json
+- Catálogo público: https://api.mope.io/store
+- Miniaturas das skins: https://s3.mope.io/mope-prod/items/
+- Miniaturas normais: https://mope.io/assets/animals/
+- Fogo padrão: https://mope.io/assets/abilities/fireball/0/
+- Variantes: https://s3.mope.io/mope-prod/items/abilities/fireball/
+
+DIREITOS
+As imagens e marcas pertencem aos respectivos titulares (Mope.io/autor(es)). Esta compilação não concede licença de redistribuição nem de uso comercial.
+
+
+PARA IMPLEMENTAÇÃO
+- PROMPT_IA_IMPLEMENTACAO.md: especificação pronta para solicitar à IA a tab de Skins/Fogos, com isolamento local.
+- CATALOGO_SKINS_POR_ANIMAL.json: lista por tier/animal, imagem padrão, todas as variantes e metadados de catálogo.
+- CATALOGO_FOGOS_POR_ANIMAL.json: efeitos compatíveis por Dragon/Fênix/BD/KD e caminhos das sequências.
+- galeria_por_tier.html: galeria offline agrupada por tier e animal.
