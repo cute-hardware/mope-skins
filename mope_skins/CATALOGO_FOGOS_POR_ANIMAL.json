@@ -1,0 +1,613 @@
+{
+  "schema_version": 1,
+  "source_date": "2026-10-08",
+  "effect_type": "fireball",
+  "description": "Fireball/projectile visuals emitted by Dragon, Phoenix, Black Dragon (BD), and King Dragon (KD). Each effect contains dynamic and static sprite sequences.",
+  "counts": {
+    "fire_source_animals": 4,
+    "variants_including_default": 25,
+    "frames": 250
+  },
+  "animation_note": "dynamic_frames are the moving projectile; static_frames are the stopped/impact animation. The five images in each sequence are ordered frame 0 through 4.",
+  "animals": [
+    {
+      "animal_id": "dragon",
+      "name_en": "Dragon",
+      "name_pt_br": "Dragão",
+      "tier": 15,
+      "effect_group": "02_Dragao",
+      "default_effect": "default",
+      "compatible_effect_ids": [
+        "default",
+        "dragon_fiery",
+        "dragon_gold",
+        "dragon_mythical_serpent",
+        "dragon_purple_haze",
+        "dragon_astral",
+        "dragon_rose"
+      ]
+    },
+    {
+      "animal_id": "phoenix",
+      "name_en": "Phoenix",
+      "name_pt_br": "Fênix",
+      "tier": 15,
+      "effect_group": "03_Fenix",
+      "default_effect": "default",
+      "compatible_effect_ids": [
+        "default",
+        "phoenix_alpha",
+        "phoenix_aqua",
+        "phoenix_ash",
+        "phoenix_ice",
+        "phoenix_icicle",
+        "phoenix_red_giant",
+        "phoenix_sundown_flames"
+      ]
+    },
+    {
+      "animal_id": "black_dragon",
+      "name_en": "Black Dragon",
+      "name_pt_br": "Dragão Negro",
+      "tier": 17,
+      "effect_group": "04_BD",
+      "default_effect": "default",
+      "compatible_effect_ids": [
+        "default",
+        "black_dragon_aurora",
+        "black_dragon_azure",
+        "unreleased_bd",
+        "black_dragon_streamline"
+      ]
+    },
+    {
+      "animal_id": "king_dragon",
+      "name_en": "King Dragon",
+      "name_pt_br": "Rei Dragão",
+      "tier": 17,
+      "effect_group": "05_KD",
+      "default_effect": "default",
+      "compatible_effect_ids": [
+        "default",
+        "birthday_mistik",
+        "king_dragon",
+        "king_dragon_king_mistik",
+        "king_dragon_king_nightbringer",
+        "king_dragon_king_stan",
+        "king_dragon_queen_celeste",
+        "king_dragon_queen_scarlet"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "default",
+      "enum": "DEFAULT",
+      "name_en": "Original / Default",
+      "group": "01_Padrao",
+      "compatible_animal": null,
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/01_Padrao/default/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/01_Padrao/default/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/01_Padrao/default/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/01_Padrao/default/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/01_Padrao/default/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/01_Padrao/default/static/0.webp",
+        "12_Fogos_Dos_Animais/01_Padrao/default/static/1.webp",
+        "12_Fogos_Dos_Animais/01_Padrao/default/static/2.webp",
+        "12_Fogos_Dos_Animais/01_Padrao/default/static/3.webp",
+        "12_Fogos_Dos_Animais/01_Padrao/default/static/4.webp"
+      ]
+    },
+    {
+      "id": "dragon_fiery",
+      "enum": "DRAGON_FIERY",
+      "name_en": "Dragon Fiery",
+      "group": "02_Dragao",
+      "compatible_animal": "dragon",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_fiery/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_fiery/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_fiery/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_fiery/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_fiery/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_fiery/static/0.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_fiery/static/1.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_fiery/static/2.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_fiery/static/3.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_fiery/static/4.webp"
+      ]
+    },
+    {
+      "id": "dragon_gold",
+      "enum": "DRAGON_GOLD",
+      "name_en": "Dragon Gold",
+      "group": "02_Dragao",
+      "compatible_animal": "dragon",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_gold/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_gold/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_gold/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_gold/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_gold/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_gold/static/0.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_gold/static/1.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_gold/static/2.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_gold/static/3.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_gold/static/4.webp"
+      ]
+    },
+    {
+      "id": "dragon_mythical_serpent",
+      "enum": "DRAGON_MYTHICAL_SERPENT",
+      "name_en": "Dragon Mythical Serpent",
+      "group": "02_Dragao",
+      "compatible_animal": "dragon",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_mythical_serpent/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_mythical_serpent/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_mythical_serpent/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_mythical_serpent/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_mythical_serpent/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_mythical_serpent/static/0.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_mythical_serpent/static/1.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_mythical_serpent/static/2.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_mythical_serpent/static/3.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_mythical_serpent/static/4.webp"
+      ]
+    },
+    {
+      "id": "dragon_purple_haze",
+      "enum": "DRAGON_PURPLE_HAZE",
+      "name_en": "Dragon Purple Haze",
+      "group": "02_Dragao",
+      "compatible_animal": "dragon",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_purple_haze/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_purple_haze/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_purple_haze/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_purple_haze/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_purple_haze/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_purple_haze/static/0.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_purple_haze/static/1.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_purple_haze/static/2.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_purple_haze/static/3.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_purple_haze/static/4.webp"
+      ]
+    },
+    {
+      "id": "dragon_astral",
+      "enum": "DRAGON_ASTRAL",
+      "name_en": "Dragon Astral",
+      "group": "02_Dragao",
+      "compatible_animal": "dragon",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_astral/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_astral/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_astral/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_astral/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_astral/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_astral/static/0.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_astral/static/1.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_astral/static/2.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_astral/static/3.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_astral/static/4.webp"
+      ]
+    },
+    {
+      "id": "dragon_rose",
+      "enum": "DRAGON_ROSE",
+      "name_en": "Dragon Rose",
+      "group": "02_Dragao",
+      "compatible_animal": "dragon",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_rose/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_rose/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_rose/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_rose/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_rose/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_rose/static/0.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_rose/static/1.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_rose/static/2.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_rose/static/3.webp",
+        "12_Fogos_Dos_Animais/02_Dragao/dragon_rose/static/4.webp"
+      ]
+    },
+    {
+      "id": "phoenix_alpha",
+      "enum": "PHOENIX_ALPHA",
+      "name_en": "Phoenix Alpha",
+      "group": "03_Fenix",
+      "compatible_animal": "phoenix",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_alpha/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_alpha/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_alpha/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_alpha/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_alpha/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_alpha/static/0.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_alpha/static/1.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_alpha/static/2.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_alpha/static/3.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_alpha/static/4.webp"
+      ]
+    },
+    {
+      "id": "phoenix_aqua",
+      "enum": "PHOENIX_AQUA",
+      "name_en": "Phoenix Aqua",
+      "group": "03_Fenix",
+      "compatible_animal": "phoenix",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_aqua/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_aqua/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_aqua/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_aqua/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_aqua/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_aqua/static/0.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_aqua/static/1.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_aqua/static/2.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_aqua/static/3.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_aqua/static/4.webp"
+      ]
+    },
+    {
+      "id": "phoenix_ash",
+      "enum": "PHOENIX_ASH",
+      "name_en": "Phoenix Ash",
+      "group": "03_Fenix",
+      "compatible_animal": "phoenix",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_ash/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_ash/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_ash/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_ash/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_ash/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_ash/static/0.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_ash/static/1.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_ash/static/2.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_ash/static/3.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_ash/static/4.webp"
+      ]
+    },
+    {
+      "id": "phoenix_ice",
+      "enum": "PHOENIX_ICE",
+      "name_en": "Phoenix Ice",
+      "group": "03_Fenix",
+      "compatible_animal": "phoenix",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_ice/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_ice/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_ice/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_ice/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_ice/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_ice/static/0.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_ice/static/1.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_ice/static/2.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_ice/static/3.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_ice/static/4.webp"
+      ]
+    },
+    {
+      "id": "phoenix_icicle",
+      "enum": "PHOENIX_ICICLE",
+      "name_en": "Phoenix Icicle",
+      "group": "03_Fenix",
+      "compatible_animal": "phoenix",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_icicle/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_icicle/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_icicle/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_icicle/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_icicle/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_icicle/static/0.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_icicle/static/1.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_icicle/static/2.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_icicle/static/3.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_icicle/static/4.webp"
+      ]
+    },
+    {
+      "id": "phoenix_red_giant",
+      "enum": "PHOENIX_RED_GIANT",
+      "name_en": "Phoenix Red Giant",
+      "group": "03_Fenix",
+      "compatible_animal": "phoenix",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_red_giant/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_red_giant/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_red_giant/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_red_giant/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_red_giant/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_red_giant/static/0.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_red_giant/static/1.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_red_giant/static/2.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_red_giant/static/3.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_red_giant/static/4.webp"
+      ]
+    },
+    {
+      "id": "phoenix_sundown_flames",
+      "enum": "PHOENIX_SUNDOWN_FLAMES",
+      "name_en": "Phoenix Sundown Flames",
+      "group": "03_Fenix",
+      "compatible_animal": "phoenix",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_sundown_flames/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_sundown_flames/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_sundown_flames/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_sundown_flames/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_sundown_flames/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_sundown_flames/static/0.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_sundown_flames/static/1.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_sundown_flames/static/2.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_sundown_flames/static/3.webp",
+        "12_Fogos_Dos_Animais/03_Fenix/phoenix_sundown_flames/static/4.webp"
+      ]
+    },
+    {
+      "id": "black_dragon_aurora",
+      "enum": "BLACK_DRAGON_AURORA",
+      "name_en": "Black Dragon Aurora",
+      "group": "04_BD",
+      "compatible_animal": "black_dragon",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_aurora/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_aurora/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_aurora/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_aurora/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_aurora/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_aurora/static/0.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_aurora/static/1.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_aurora/static/2.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_aurora/static/3.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_aurora/static/4.webp"
+      ]
+    },
+    {
+      "id": "black_dragon_azure",
+      "enum": "BLACK_DRAGON_AZURE",
+      "name_en": "Black Dragon Azure",
+      "group": "04_BD",
+      "compatible_animal": "black_dragon",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_azure/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_azure/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_azure/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_azure/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_azure/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_azure/static/0.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_azure/static/1.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_azure/static/2.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_azure/static/3.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_azure/static/4.webp"
+      ]
+    },
+    {
+      "id": "unreleased_bd",
+      "enum": "UNRELEASED_BD",
+      "name_en": "Unreleased Bd",
+      "group": "04_BD",
+      "compatible_animal": "black_dragon",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/04_BD/unreleased_bd/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/04_BD/unreleased_bd/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/04_BD/unreleased_bd/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/04_BD/unreleased_bd/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/04_BD/unreleased_bd/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/04_BD/unreleased_bd/static/0.webp",
+        "12_Fogos_Dos_Animais/04_BD/unreleased_bd/static/1.webp",
+        "12_Fogos_Dos_Animais/04_BD/unreleased_bd/static/2.webp",
+        "12_Fogos_Dos_Animais/04_BD/unreleased_bd/static/3.webp",
+        "12_Fogos_Dos_Animais/04_BD/unreleased_bd/static/4.webp"
+      ]
+    },
+    {
+      "id": "black_dragon_streamline",
+      "enum": "BLACK_DRAGON_STREAMLINE",
+      "name_en": "Black Dragon Streamline",
+      "group": "04_BD",
+      "compatible_animal": "black_dragon",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_streamline/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_streamline/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_streamline/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_streamline/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_streamline/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_streamline/static/0.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_streamline/static/1.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_streamline/static/2.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_streamline/static/3.webp",
+        "12_Fogos_Dos_Animais/04_BD/black_dragon_streamline/static/4.webp"
+      ]
+    },
+    {
+      "id": "birthday_mistik",
+      "enum": "BIRTHDAY_MISTIK",
+      "name_en": "Birthday Mistik",
+      "group": "05_KD",
+      "compatible_animal": "king_dragon",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/05_KD/birthday_mistik/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/05_KD/birthday_mistik/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/05_KD/birthday_mistik/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/05_KD/birthday_mistik/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/05_KD/birthday_mistik/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/05_KD/birthday_mistik/static/0.webp",
+        "12_Fogos_Dos_Animais/05_KD/birthday_mistik/static/1.webp",
+        "12_Fogos_Dos_Animais/05_KD/birthday_mistik/static/2.webp",
+        "12_Fogos_Dos_Animais/05_KD/birthday_mistik/static/3.webp",
+        "12_Fogos_Dos_Animais/05_KD/birthday_mistik/static/4.webp"
+      ]
+    },
+    {
+      "id": "king_dragon",
+      "enum": "KING_DRAGON",
+      "name_en": "King Dragon",
+      "group": "05_KD",
+      "compatible_animal": "king_dragon",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/05_KD/king_dragon/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/05_KD/king_dragon/static/0.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon/static/1.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon/static/2.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon/static/3.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon/static/4.webp"
+      ]
+    },
+    {
+      "id": "king_dragon_king_mistik",
+      "enum": "KING_DRAGON_KING_MISTIK",
+      "name_en": "King Dragon King Mistik",
+      "group": "05_KD",
+      "compatible_animal": "king_dragon",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_mistik/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_mistik/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_mistik/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_mistik/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_mistik/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_mistik/static/0.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_mistik/static/1.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_mistik/static/2.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_mistik/static/3.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_mistik/static/4.webp"
+      ]
+    },
+    {
+      "id": "king_dragon_king_nightbringer",
+      "enum": "KING_DRAGON_KING_NIGHTBRINGER",
+      "name_en": "King Dragon King Nightbringer",
+      "group": "05_KD",
+      "compatible_animal": "king_dragon",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_nightbringer/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_nightbringer/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_nightbringer/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_nightbringer/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_nightbringer/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_nightbringer/static/0.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_nightbringer/static/1.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_nightbringer/static/2.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_nightbringer/static/3.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_nightbringer/static/4.webp"
+      ]
+    },
+    {
+      "id": "king_dragon_king_stan",
+      "enum": "KING_DRAGON_KING_STAN",
+      "name_en": "King Dragon King Stan",
+      "group": "05_KD",
+      "compatible_animal": "king_dragon",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_stan/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_stan/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_stan/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_stan/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_stan/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_stan/static/0.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_stan/static/1.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_stan/static/2.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_stan/static/3.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_king_stan/static/4.webp"
+      ]
+    },
+    {
+      "id": "king_dragon_queen_celeste",
+      "enum": "KING_DRAGON_QUEEN_CELESTE",
+      "name_en": "King Dragon Queen Celeste",
+      "group": "05_KD",
+      "compatible_animal": "king_dragon",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_queen_celeste/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_queen_celeste/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_queen_celeste/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_queen_celeste/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_queen_celeste/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_queen_celeste/static/0.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_queen_celeste/static/1.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_queen_celeste/static/2.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_queen_celeste/static/3.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_queen_celeste/static/4.webp"
+      ]
+    },
+    {
+      "id": "king_dragon_queen_scarlet",
+      "enum": "KING_DRAGON_QUEEN_SCARLET",
+      "name_en": "King Dragon Queen Scarlet",
+      "group": "05_KD",
+      "compatible_animal": "king_dragon",
+      "dynamic_frames": [
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_queen_scarlet/dynamic/0.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_queen_scarlet/dynamic/1.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_queen_scarlet/dynamic/2.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_queen_scarlet/dynamic/3.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_queen_scarlet/dynamic/4.webp"
+      ],
+      "static_frames": [
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_queen_scarlet/static/0.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_queen_scarlet/static/1.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_queen_scarlet/static/2.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_queen_scarlet/static/3.webp",
+        "12_Fogos_Dos_Animais/05_KD/king_dragon_queen_scarlet/static/4.webp"
+      ]
+    }
+  ],
+  "sources": {
+    "client_bundle": "https://mope.io/BoTM2IF7.js",
+    "frame_manifest": "12_Fogos_Dos_Animais/manifest_fogos.csv"
+  }
+}
